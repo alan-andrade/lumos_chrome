@@ -1,4 +1,4 @@
-requirejs.config({
+var require = {
   baseUrl: '../js',
 
   paths: {
@@ -7,5 +7,11 @@ requirejs.config({
     underscore: 'vendor/underscore'
   },
 
-  deps: ['underscore', 'jquery', 'jqueryui', 'popup/main']
-});
+  shim: {
+    jqueryui: {
+      deps: ['jquery']
+    }
+  },
+
+  deps: ['underscore', 'jquery']
+};

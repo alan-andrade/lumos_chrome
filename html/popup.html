@@ -1,56 +1,34 @@
 <!DOCTYPE html>
+
 <html>
   <head>
-    <script src="../js/jquery-2.1.1.min.js"></script>
-    <script src="../js/jquery-ui-1.10.4.min.js"></script>
-    <script src="../js/background.js"></script>
-    <script src="../js/moment.min.js"></script>
-    <script src="../js/popup.js"></script>
-
+    <script data-main='../js/popup' src="../js/require.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/background.css">
     <link rel="stylesheet" type="text/css" href="../css/popup.css">
     <link rel="stylesheet" type="text/css" href="../css/jquery-ui-1.10.4.min.css">
   </head>
   <body>
-    <div id="wrapper">
-      <!--<div class="schedule">
-        <h3>Schedule Today's Lumosity Break</h3>
-
-        <div class="rich-input">
-          <input type="text" id="time" size=10 placeholder="16:00"/>
-          <button class="btn" id="schedule">Remind Me!</button>
-          <div id="error">Please use 24 hour format</div>
-        </div>
-      </div>-->
-        <div class="playnowbutton">
-         <a href="game_play.html" target="_blank">Take a Break Now</a>
-        </div>
-        <hr>
-      <div class="games">
-        <div>
-          <h3>Frequency of your breaks:</h3>
-          <label>
-              <select>
-                  <option>Every time I open a new tab</option>
-                  <option selected>Once every 5 new tabs</option>
-                  <option>Once every 10 new tabs</option>
-                  <option>Once every 15 new tabs</option>
-                  <option>Once every 20 new tabs</option>
-                  <option>Never</option>
-              </select>
-          </label>
-          <br><br><br>
-        </div>
-
-        <div>
-          <h3>Deselect games you don't want:</h3></div>
-        <div id="games-list">
-        </div>
+  <div id="wrapper">
+    <div class="playnowbutton">
+      <a href="game_play.html#!" target="_blank">Take a Break Now</a>
+    </div>
+    <hr>
+    <div class="games">
+      <div>
+        <h3>Frequency of your breaks:</h3>
+        <div id="training-frequency"></div>
+        <br><br>
       </div>
-      <hr>
-      <div class="games">
-        <a href="mailto:ab@lumoslabs.com?subject=Lumosity%20Break%20Chrome%20Extension" target="_blank">Do you like your Breaks?</a>
+
+      <div>
+        <h3>Deselect games you don't want:</h3></div>
+      <div id="games-list">
       </div>
     </div>
+    <hr>
+    <div class="games">
+      <a href="mailto:ab@lumoslabs.com?subject=Lumosity%20Break%20Chrome%20Extension" target="_blank">Do you like your Breaks?</a>
+    </div>
+  </div>
   </body>
 </html>

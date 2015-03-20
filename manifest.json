@@ -11,17 +11,10 @@
     "128": "icon128.png"
   },
 
-  "permissions": [ "tabs" ],
+  "permissions": [ "tabs", "management" ],
 
   "chrome_url_overrides" : {
     "newtab": "html/game_play.html"
-  },
-
-  "sandbox": {
-    "pages": [
-      "html/game.html",
-      "game.html"
-    ]
   },
 
   "browser_action": {
@@ -30,14 +23,5 @@
       "38": "brain_76x76.png"
     },
     "default_popup": "html/popup.html"
-  },
-
-  "background": {
-    "scripts": [
-      "js/moment.min.js",
-      "js/app.js"
-    ],
-
-    "persistent": false
   }
 }
